@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+
+    <form action="">
+        ENTER 1st NUMBER: <input type="text" id="first"><br>
+        ENTER 2st NUMBER: <input type="text" id="second"><br>
+
+        <input type="button" onclick="addition()" value="+">&nbsp;&nbsp;
+        <input type="button" onclick="sub()" value="-">&nbsp;&nbsp;
+        <input type="button" onclick="multiply()" value="*">&nbsp;&nbsp;
+        <input type="button" onclick="division()" value="/">
+        <!-- <input type="button" onclick="clear()" value="C"> -->
+
+
+
+
+
+    </form>
+    <p>THE RESULT IS :<br>
+        <span id="result"></span>
+    </p>
+
+
+
+
+</body>
+<script>
+    function addition() {
+
+        num1 = parseInt(document.getElementById("first").value)
+        num2 = parseInt(document.getElementById("second").value)
+        document.getElementById("result").innerHTML = num1 + num2;
+
+
+    }
+
+    function sub() {
+
+        num1 = parseInt(document.getElementById("first").value)
+        num2 = parseInt(document.getElementById("second").value)
+        document.getElementById("result").innerHTML = num1 - num2;
+
+
+    }
+
+    function multiply() {
+
+        num1 = parseInt(document.getElementById("first").value)
+        num2 = parseInt(document.getElementById("second").value)
+        document.getElementById("result").innerHTML = num1 * num2;
+
+
+    }
+
+    function division() {
+
+        num1 = parseInt(document.getElementById("first").value)
+        num2 = parseInt(document.getElementById("second").value)
+        document.getElementById("result").innerHTML = num1 / num2;
+
+
+    }
+
+
+</script>
+
+</html>
